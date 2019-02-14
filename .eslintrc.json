@@ -1,0 +1,27 @@
+{
+    "extends": "eslint:recommended",
+    "rules": {
+        "semi": ["error", "always"],
+        "indent": ["warn", 4],
+        "quotes": ["warn", "single"],
+        "no-empty": ["warn", { "allowEmptyCatch": true }],
+        "no-eval": "error",
+        "no-var": "error",
+        "no-console": "off",
+        "prefer-const": "warn",
+        "no-trailing-spaces": "error",
+        "no-unused-vars": ["error", { "vars": "all", "args": "none", "ignoreRestSiblings": true }]
+    },
+    "parserOptions": {
+        "ecmaVersion": 8
+    },
+    "env": {
+        "node": true,
+        "mongo": true,
+        "es6": true,
+        "amd": true,
+        "mocha": true,
+        "jquery": true,
+        "browser": true
+    }
+}
