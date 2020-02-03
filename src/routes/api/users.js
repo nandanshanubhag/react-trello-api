@@ -78,7 +78,7 @@ router.post('/login', auth.optional, (req, res, next) => {
             });
         }
 
-        return status(400).info;
+        return res.status(400).json(info);
     })(req, res, next);
 });
 
